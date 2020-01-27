@@ -1,0 +1,60 @@
+.detailed-car-image {
+    height: 200px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.phone-block {
+    height: 36px;
+}
+
+.modal {
+    display: block;
+}
+
+/* Animations */
+/*    *-enter  */         /*    *-leave  */
+/*    *-enter-active */  /*   *-leave-active  */
+/*    *-enter-to  */      /*    *-leave-to  */
+.phoneAnm-enter-active, .phoneAnm-leave-active {
+    transition: all .5s;
+}
+
+.phoneAnm-enter, .modalAnm-leave-to {
+    transform: translateX(50px);
+    opacity: 0;
+}
+
+.modalAnm-enter-active, .modalAnm-leave-active {
+    transition: all .5s;
+}
+
+.modalAnm-enter, .modalAnm-leave-to {
+    transform: translateY(-100px);
+}
+
+.fadeAnm-enter-active {
+    animation: .75s fadeAnm forwards;
+}
+
+.fadeAnm-leave-active {
+    animation: .75s fadeAnm reverse;
+}
+
+.fadeAnm-enter, .fadeAnm-leave-to {
+    opacity: 0;
+}
+
+@keyframes fadeAnm {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: .5;
+    }
+}
+
+
+
